@@ -34,7 +34,7 @@
                     "Method of Discovery: $discover_method\n".
                     "Additional Comments: $comments\n";
 
-    $to = "yourchildcare@ycc.com";
+    $to = $p1_email;
 
     $headers = "From: $email_from \r\n";
 
