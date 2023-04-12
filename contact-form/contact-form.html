@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-style.css">
+    <script src="contact-script.js"></script>
+    <script src="https://kit.fontawesome.com/1ba418bb73.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a id="header-link" href="../index.html"><h3 id="header-logo">Your Child Care</h3></a>
+        <div></div>
+        <div></div>
+    </nav>
+
+    <div id="hero">
+        <h1 class="hero-main">Child Care Inquiry Form</h1>
+        <h3 class="hero-secondary">Fill out this form, and we'll get back to you as soon as we can!</h3>
+    </div> 
+
+    <div id="form-container">
+        <form action="contact-form-handler.php" method="post" id="contact-form">
+            <label for="p-1-name">Parent/Guardian 1 Name<span class="req-icon">*</span></label><br>
+            <input type="text" placeholder="First and Last Name" id="p-1-name" class="contact-input" name="p-1-name" required>
+            <br><br>
+            <label for="p-1-phone-number">Parent/Guardian 1 Number<span class="req-icon">*</span></label><br>
+            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="p-1-phone-number" class="contact-input" name="p-1-phone-number" required>
+            <br><br>
+            <label for="p-1-email">Parent/Guardian 1 Email Address<span class="req-icon">*</span></label><br>
+            <input type="email" placeholder="Enter your email" id="p-1-email" class="contact-input" name="p-1-email" required>
+            <br><br>
+            <label for="p-2-name">Parent/Guardian 2 Name</label><br>
+            <input type="text" placeholder="First and Last Name" id="p-2-name" class="contact-input" name="p-2-name">
+            <br><br>
+            <label for="p-2-phone-number">Parent/Guardian 2 Number</label><br>
+            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="p-2-phone-number" class="contact-input" name="p-2-phone-number">
+            <br><br>
+            <label for="p-2-email">Parent/Guardian 2 Email Address</label><br>
+            <input type="email" placeholder="Enter your email" id="p-2-email" class="contact-input" name="p-2-email">
+            <br><br>
+            <!-- Home Address -->
+            <lable>Home Address<span class="req-icon">*</span></lable><br>
+            <input type="text" placeholder="Street Address" id="street-address" class="contact-input" name="street-address" required><br>
+            <input type="text" placeholder="Apartment, Suite, etc" id="apt-num" class="contact-input" name="apt-num"><br>
+            <input type="text" placeholder="City" id="city" class="contact-input" name="city" required>
+            <select id="state" class="contact-input" name="state" required>
+                <option value="" disabled selected="selected">Select a State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br>
+            <input type="number" placeholder="Postal Code" id="zip" class="contact-input" name="zip" required>
+            <!-- -->
+            <br><br>
+            <label for="num-of-children">How many children require care?<span class="req-icon">*</span></label><br>
+            <input type="number" placeholder="Enter a number" min="1" max="8" id="num-of-children" class="contact-input" name="num-of-children" required>
+            <br><br>
+            <label for="name-and-age">Please list the children's names and ages:<span class="req-icon">*</span></label><br>
+            <textarea placeholder="Enter text here..." rows="4" id="name-and-age" class="contact-input" name="name-and-age" required></textarea>
+            <br><br>
+            <!-- Child name and age (using js)
+            <label for="child-name-x">Child X Name:</label><br>
+            <input type="text" placeholder="First and Last Name" id="child-name-x" name="child-name-x">
+            <br><br>
+            <label for="child-age-x">Child X Age:</label><br>
+            <input type="number" id="child-age-x" name="child-age-x">
+            -->
+            <label for="start-care">When would you like to begin care?<span class="req-icon">*</span></label><br>
+            <input type="date" id="start-care" class="contact-input" name="start-care" required>
+            <br><br>
+            <label for="allergies">Are there any allergies/dietary restrictions? If so, please list them.<span class="req-icon">*</span></label><br>
+            <input type="text" placeholder="Eg. Peanuts" id="allergies" class="contact-input" name="allergies" required>
+            <br><br>
+            <label>Are you using a "Child Care Scholarship"?<span class="req-icon">*</span></label><br>
+            <input type="radio" id="yes-subsidy" value="yes" name="subsidy" required>
+            <label for="yes-subsidy">Yes.</label><br>
+            <input type="radio" id="no-subsidy" value="no" name="subsidy">
+            <label for="no-subsidy">No.</label><br>
+            <input type="radio" id="idk-subsidy" value="not sure" name="subsidy">
+            <label for="no-subsidy">I'm not sure what the Child Care Scholarship is.</label>
+            <br><br>
+            <label for="discover-method">How did you hear about us?<span class="req-icon">*</span></label><br>
+            <input type="text" id="discover-method" class="contact-input" name="discover-method" required>
+            <br><br>
+            <label for="comments">Comments:</label><br>
+            <textarea placeholder="Enter text here..." rows="4" id="comments" class="contact-input" name="comments"></textarea>
+            <br><br>
+            <div id="submit-reset">
+                <input class="btn" id="submit-btn" type="submit" value="Submit">
+                <input class="btn" id="reset-btn" type="reset">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div id="footer-info">
+            <div id="footer-sec-1" class="footer-sec">
+                <!-- <img class="footer-logo" src="./LOGO INFANTIL-02.png"> -->
+                <h1>Your Child Care LLC</h1>
+
+                <p>My Child Care is your child care!</p>
+    
+                <a class="footer-address" href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i> Maryland, USA</a>
+    
+                <div class="socials">
+                    <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.carelulu.com/"><img id="carelulu-social" src="../photos/carelulu.png"></a>
+                </div>
+            </div>
+
+            <div id="footer-sec-2" class="footer-sec">
+                <h3>Quick Nav</h3>
+
+                <div id="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html#blog">Blog</a>
+                    <a href="../index.html#info">About Us</a>
+                    <a href="../index.html#location-sec">Location</a>
+                    <a href="../index.html#gallery">Gallery</a>
+                    <a href="../index.html#sign-up">Contact Us</a>
+                </div>
+            </div>
+
+            <div id="footer-sec-3" class="footer-sec">
+                <h3>About</h3>
+
+                <p> Your Child Care is a year-round daycare located in Maryland.
+                    We are open from 7:30am until 5:00pm. We have over 20 years of experience caring for children of all ages.
+                    Your Child Care is also a Spanish immersion program, and uses a play-based curriculum.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div class="footer-bottom-sec">
+                <p class="copyright-text"><!-- <img id="copyright-logo" src="./LOGO INFANTIL-02.png"> --> Your Child Care LLC © 2023 All Rights Reserved</p>
+                <p class="under-copyright copyright-text">MSDE Registration #123456</p>
+                <p class="under-copyright copyright-text">Site design: <a href="https://joeldgalan.github.io/portfolio/" target="_blank">Joel Galan</a></p>
+            </div>
+            <div id="privacy-policy" class="footer-bottom-sec">
+                <a href="../privacy-policy/privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

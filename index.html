@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Child Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1ba418bb73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <a id="header-link" href="#hero"><h3 id="header-logo">Your Child Care</h3></a>
+
+        <ul id="nav-links">
+            <li class="hero-secondary link" onclick="navClick()"><a href="#blog">Blog</a></li>
+            <li class="hero-secondary link" onclick="navClick()"><a href="#info">About Us</a></li>
+            <li class="hero-secondary link" onclick="navClick()"><a href="#location-sec">Location</a></li>
+            <li class="hero-secondary link" onclick="navClick()"><a href="#gallery">Gallery</a></li>
+            <li class="hero-secondary link" onclick="navClick()"><a href="#sign-up">Contact Us</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="hero" class="section">
+        <div id="hero-container">
+        <div class="left">
+            <h1 class="hero-main"><span>Your Child Care</span></h1>
+            <p class="hero-secondary">Your Child Care is a year-round daycare located in Maryland.
+            We are open from 7:30am until 5:00pm. We have over 20 years of experience caring for children of all ages.
+            Your Child Care is also a Spanish immersion program, and uses a play-based curriculum.
+            </p>
+            <a class="contact-btn" href="./contact-form/contact-form.html" target="_blank"><p>Contact Us</p></a>
+        </div>
+
+        <div id="hero-img-border3">
+            <div id="hero-img-border2">
+                <div id="hero-img">
+                    <img src="./photos/children-pic1.jpeg">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blog" class="section">
+
+        <h1 id="blog-title"><u>Blog Posts:</u></h1>
+
+        <div id="posts-container">
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 1 Title</h2>
+                        <p class="post-date">Jan 16, 2023</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 2 Title</h2>
+                        <p class="post-date">Jan 02, 2023</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 3 Title</h2>
+                        <p class="post-date">Dec 20, 2022</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 4 Title</h2>
+                        <p class="post-date">Jan 16, 2023</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 5 Title</h2>
+                        <p class="post-date">Jan 02, 2023</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="blog-post">
+                <a class="blog-link" href="./blog-posts/blog-post-template.html" target="blank">
+                    <div class="blog-img-placeholder">
+                        <p class="hero-secondary">this is a placeholder for an image</p>
+                    </div>
+                    <div class="blog-text">
+                        <h2 class="post-title">Post 6 Title</h2>
+                        <p class="post-date">Dec 20, 2022</p>
+                        <p>First few sentences of the post... A summary of what the post is about.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+        <div id="expand-close-btn" onclick="showMoreLess()">See More</div>
+    </div>
+
+    <!-- Info Section -->
+    <div id="info" class="section">
+        <h2>Why Choose Us?</h2>
+
+        <div id="info-blocks">
+            <!-- Top Icon Column -->
+            <div id="icons">
+                <div class="icon-container">
+                    <div class="info-block-icon"><i class="fa-solid fa-house-lock"></i></div>
+                </div>
+                <div class="icon-container">
+                    <div class="info-block-icon"><i class="fa-solid fa-brain"></i></div>
+                </div>
+                <div class="icon-container">
+                    <div class="info-block-icon"><i class="fa-regular fa-face-grin"></i></div>
+                </div>
+                <div class="icon-container">
+                    <div class="info-block-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+
+            <!-- Lower Description Column -->
+            <div id="info-block-text">
+                <p>We are safe and secure.</p>
+                <p>We promote growth in children through activites and crafts.</p>
+                <p>We provide a joyful and fun environment for all children to enjoy.</p>
+                <p>We care about you and your child.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Carousel -->
+    <div id="review-sec">
+        <div id="carousel">
+            <div id="carousel-header">
+                <div id="prev-arrow" class="slide-arrow" onclick="prevSlide()"><i class="fa-solid fa-angle-left"></i></div>
+                <h2>What our customers say</h2>
+                <div id="next-arrow" class="slide-arrow" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <section class="slider-wrapper">
+                <ul id="slides-container">
+                    <!-- Review 1 -->
+                    <li id="review-1" class="slide">
+                        <div class="review-slide">
+                            <a href="https://www.carelulu.com" target="_blank" class="user">
+                                <img class="user-img" src="./photos/Romney P.png">
+                                <p class="user-name"><strong>Romney P.</strong></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </a>
+                            <p class="testimony">We were given a recommendation from friends about YCC and we were completely satisfied with the almost 2 years both of our boys spent with YCC... 
+                                Even though its an in home day care YCC goes out of their way to take the kids on many nature walks through out the year on the various nature trails around the house and get the kids out and doing things. 
+                                They worked with our big guy once he got to the right age for months teaching him letters... 
+                                The care they provide is the perfect mix of introducing structure and learning time coupled with the feeling of a safe and familiar feeling of a "second home" for infants and toddlers so they don't feel "lost in the crowd" as they might in a massive center. 
+                                The boys love you all and will miss you YCC; thank you so much.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Review 2 -->
+                    <li id="review-2" class="slide">
+                        <div class="review-slide">
+                        <a href="https://www.google.com/maps/" target="_blank" class="user">
+                            <img class="user-img" src="./photos/Kaycie M Pic.png">
+                            <p class="user-name"><strong>Kaycie M.</strong></p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </a>
+                        <p class="testimony">The folks at YCC were fantastic providers to my daughter. 
+                            They were loving, kind, nurturing. She has fantastic manners and is great at following directions and I believe this is from all that they taught her while at care. 
+                            They even played an integral part in helping potty train my 2 year old daughter right before she transitioned to nursery school.
+                        </p>
+                        </div>
+                    </li>
+                    
+                    <!-- Review 3 -->
+                    <li id="review-3" class="slide">
+                        <div class="review-slide">
+                        <a href="https://www.google.com/maps/" target="_blank" class="user">
+                            <img class="user-img" src="./photos/Maria P Pic.png">
+                            <p class="user-name"><strong>Maria P.</strong></p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </a>
+                        <p class="testimony">YCC is WONDERFUL. 
+                            They take such good care of our daughter, provide good meals and snacks. 
+                            My daughter loves them and their team. Definitely recommend!
+                        </p>
+                        </div>
+                    </li>
+
+                    <!-- Review 4 -->
+                    <li id="review-4" class="slide">
+                        <div class="review-slide">
+                            <a href="https://www.google.com/maps/" target="_blank" class="user">
+                                <img class="user-img" src="./photos/Liz R Pic.png">
+                                <p class="user-name"><strong>Liz R.</strong></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </a>
+                            <p class="testimony">Your Child Care is wonderful. They treat our children like they are one of their own. 
+                                They are kind, loving, and caring. Our children have learned soo much from them and are more than prepared for when they go onto kindergarten. 
+                                As an added bonus, YCC cooks delicious food that my children enjoy and it's one less thing that we as parents have to worry about. 
+                                We couldn't do all that we do without Your Child Care.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Review 5 -->
+                    <li id="review-5" class="slide">
+                        <div class="review-slide">
+                            <a href="https://www.google.com/maps/" target="_blank" class="user">
+                                <img class="user-img" src="./photos/Courtney M Pic.png">
+                                <p class="user-name"><strong>Courtney M.</strong></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </a>
+                            <p class="testimony">YCC is an AMAZING and very flexible daycare provider.  
+                                They not only helped us out when we were in a bind, they extended their offer for both of my sons to come to their daycare.  
+                                They cook delicious food for the kids and you can tell how much they love and care for each and every one of them.  
+                                Another plus is the cleanliness of their house, its always spotless and smells so good!  
+                                I highly recommend this home daycare to anyone in the area.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Review 6 -->
+                    <li id="review-6" class="slide">
+                        <div class="review-slide">
+                            <a href="https://www.carelulu.com" target="_blank" class="user">
+                                <img class="user-img" src="./photos/Janet L.jpeg">
+                                <p class="user-name"><strong>Janet L.</strong></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </a>
+                            <p class="testimony">The YCC family cared for my 2 daughters for 3 years and we were absolutely thrilled with our experience. 
+                                The home is a nurturing and supportive environment perfect for babies and young children. 
+                                The class sizes are small, the family works together wonderfully and that kind of attention and teamwork creates a very positive environment and models such excellent social skills for children... 
+                                YCC and their homecare were the perfect mix. 
+                                They are extremely helpful with busy working parents... 
+                                Some of the big bonuses: Opportunity for bilingual exposure, fun activities like Pajama Friday (simple idea, but the girls LOVED it), lots of outdoor time since the main play area is adjacent to the fenced porch, and family-centered care...
+                                You will be very happy with them!!
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Review 7 -->
+                    <li id="review-7" class="slide">
+                        <div class="review-slide">
+                            <a href="https://www.google.com/maps/" target="_blank" class="user">
+                                <img class="user-img" src="./photos/Jacqueline W Pic.png">
+                                <p class="user-name"><strong>Jacqueline W.</strong></p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </a>
+                            <p class="testimony">This home daycare provider and their family offer a very loving, safe, and hygienic environment for children to flourish. 
+                                There is plenty of natural light and the children enjoy being able to play outdoors at every opportunity. 
+                                They offer plenty of developmentally appropriate toys and child friendly meals. 
+                                Thanks to their high level of care, my baby comes home happy, well cared for, and clean every day. 
+                                We are so, so satisfied with the care our child has received here. 
+                                Even though it’s a bit further from my daily route than the many other daycares we visited, my husband and I are glad we decided on Your Child Care, since it is the cleanest, best structured home daycare we saw. 
+                                Highly recommended!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Google Location -->
+    
+    <div id="location-sec" class="section">
+        <p id="quote"><i>Where are we located?</i>
+        </p>
+        
+        <iframe id="google-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184599.278074594!2d-79.48607583083759!3d38.78754600500782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64debe9f190df%3A0xf2af37657655f6b1!2sMaryland!5e0!3m2!1sen!2sus!4v1680055266804!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <div class="gallery-slider">
+            <div id="images-container">
+                <input type="radio" name="gallery-radio-btn" id="gal-radio1" class="gal-radio" checked>
+                <input type="radio" name="gallery-radio-btn" id="gal-radio2" class="gal-radio">
+                <input type="radio" name="gallery-radio-btn" id="gal-radio3" class="gal-radio">
+                <input type="radio" name="gallery-radio-btn" id="gal-radio4" class="gal-radio">
+    
+                <div class="image-container first">
+                    <img class="gallery-img" src="https://lh3.googleusercontent.com/p/AF1QipO0gNnMP5RNcGDkjMEyeaEOTNxXGEyVnfTI7Uo4=s1360-w1360-h1020">
+                </div>
+                <div class="image-container">
+                    <img class="gallery-img" src="https://lh3.googleusercontent.com/p/AF1QipPJw6AbcSty5DeCGbGmiiP0rP6HwIdeBIr7jjXp=s1360-w1360-h1020">
+                </div>
+                <div class="image-container">
+                    <img class="gallery-img" src="https://lh3.googleusercontent.com/p/AF1QipOZTmHMAfQic2LcVpMjyN30f7sgIZmAngF5jr_l=s1360-w1360-h1020">
+                </div>
+                <div class="image-container">
+                    <img class="gallery-img" src="https://lh3.googleusercontent.com/p/AF1QipMP1e6OmjAxBkHxmUO2Iixn0LzLQiBWT3kTfw38=s1360-w1360-h1020">
+                </div>
+            </div>
+            
+            <div id="navigation-manual">
+                <label for="gal-radio1" id="manual-btn1" class="manual-btn"></label>
+                <label for="gal-radio2" id="manual-btn2" class="manual-btn"></label>
+                <label for="gal-radio3" id="manual-btn3" class="manual-btn"></label>
+                <label for="gal-radio4" id="manual-btn4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="sign-up" class="section">
+        <div id="blue-sign-up">
+            <div>
+                <p id="call"><strong>Want to contact us?</strong></p>
+                <p id="sign-up-text" class="hero-secondary">Contact us by clicking that button right over there!</p>
+            </div>
+            <a class="contact-btn" href="./contact-form/contact-form.html" target="_blank"><p>Contact Us</p></a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-info">
+            <div id="footer-sec-1" class="footer-sec">
+                <!-- <img class="footer-logo" src="./LOGO INFANTIL-02.png"> -->
+                <h1>Your Child Care LLC</h1>
+
+                <p>My Child Care is your child care!</p>
+    
+                <a class="footer-address" href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i> Maryland, USA</a>
+    
+                <div class="socials">
+                    <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.carelulu.com/"><img id="carelulu-social" src="./photos/carelulu.png"></a>
+                </div>
+            </div>
+
+            <div id="footer-sec-2" class="footer-sec">
+                <h3>Quick Nav</h3>
+
+                <div id="footer-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html#blog">Blog</a>
+                    <a href="../index.html#info">About Us</a>
+                    <a href="../index.html#location-sec">Location</a>
+                    <a href="../index.html#gallery">Gallery</a>
+                    <a href="../index.html#sign-up">Contact Us</a>
+                </div>
+            </div>
+
+            <div id="footer-sec-3" class="footer-sec">
+                <h3>About</h3>
+
+                <p> Your Child Care is a year-round daycare located in Maryland.
+                    We are open from 7:30am until 5:00pm. We have over 20 years of experience caring for children of all ages.
+                    Your Child Care is also a Spanish immersion program, and uses a play-based curriculum.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div class="footer-bottom-sec">
+                <p class="copyright-text"><!-- <img id="copyright-logo" src="./LOGO INFANTIL-02.png"> --> Your Child Care LLC © 2023 All Rights Reserved</p>
+                <p class="under-copyright copyright-text">MSDE Registration #123456</p>
+                <p class="under-copyright copyright-text">Site design: <a href="https://joeldgalan.github.io/portfolio/" target="_blank">Joel Galan</a></p>
+            </div>
+            <div id="privacy-policy" class="footer-bottom-sec">
+                <a href="./privacy-policy/privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
