@@ -1,3 +1,4 @@
+// hides nav bar on downscroll.
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;

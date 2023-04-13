@@ -12,18 +12,19 @@ const seeMoreBtn = document.getElementById("expand-close-btn");
 const navigationBtns = document.querySelectorAll(".manual-btn");
 const radioBtns = document.querySelectorAll(".gal-radio");
 
-// adds .active class to animate hamburger and show nav links. //
+// adds .active class to animate hamburger and show nav links.
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navLinks.classList.toggle("active");
 })
 
-// when a nav link is clicked in hamburger mode, this will close the nav menu //
+// when a nav link is clicked in hamburger mode, this will close the nav menu.
 document.querySelectorAll(".link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navLinks.classList.remove("active");
 }))
 
+// hides or expands blog posts section when Show More/Less button is clicked.
 let isHidden = true;
 function showMoreLess() {
   console.log(blogContainer.style.height);
@@ -38,6 +39,7 @@ function showMoreLess() {
   }
 }
 
+// nextSlide() and prevSlide() slide the review carousel panels when the arrow buttons are clicked.
 function nextSlide() {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft += slideWidth;
@@ -48,15 +50,7 @@ function prevSlide() {
   slidesContainer.scrollLeft -= slideWidth;
 }
 
-let navClicked = false;
-function navClick() {
-  navClicked = true;
-}
-
-function navClickReset() {
-  navClicked = false;
-} 
-
+// controls auto scroll on image gallery.
 let counter = 1;
 setInterval(function(){
   document.getElementById('gal-radio' + counter).checked = true
@@ -71,6 +65,7 @@ setInterval(function(){
   radioBtns[3].dispatchEvent(evt);
 }, 5000);
 
+// checks radio buttons and fills with color when they are checked/selected, transparent when not checked.
 radioBtns.forEach(btn => {
   btn.addEventListener("input", () => {
     if (btn.checked === true) {
@@ -100,6 +95,17 @@ radioBtns.forEach(btn => {
   });
 });
 
+// navClicked() & navClickReset() help control the nav bar disappearing after clicking on a link.
+let navClicked = false;
+function navClick() {
+  navClicked = true;
+}
+
+function navClickReset() {
+  navClicked = false;
+} 
+
+// hides nav bar on downscroll.
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
